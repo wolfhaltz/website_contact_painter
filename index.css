@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .banner{
+    width: 100%;
+    height: 10rem;
+    background-color: black;
+    color: white;
+    display: flex;
+  }
+  
+  .banner div{
+    text-align: center;
+    margin: auto;
+  }
+  
+  div.mother{
+    width: 100%;
+    display: flex;
+  }
+  div.mother div{
+    border-radius: 0 0 12px 12px;
+  }
+  .ink {
+    background-color: black;
+  }
+  .ink_01{
+    width:1%;
+    height:3rem;
+  }
+  .ink_02{
+    width:1%;
+    height:8rem;
+  }
+  .ink_03{
+    width:1%;
+    height:10rem;
+  }
+  .ink_04{
+    width:1%;
+    height:15rem;
+  }
+  .ink_05{
+    width:1.5%;
+    height:18rem;
+  }
+  .ink_06{
+    width:1%;
+    height:17rem;
+  }
