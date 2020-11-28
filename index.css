@@ -85,3 +85,16 @@ div.mother div {
     width: 1%;
     height: 26rem;
 }
+
+/* SECTION CARDS */
+.main{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.card{
+    background-color: black;
+    width: 200px;
+    margin: 15px;
+    height: 200px;
+    display: inline-block;
+}
