@@ -113,6 +113,9 @@ function animate(){
     animationId = requestAnimationFrame(animate)
     c.fillStyle = 'rgba(0, 0 , 0, 0.1)'
     c.fillRect(0, 0, canvas.width, canvas.height)
+    c.font = "30px Arial";
+    c.fillStyle = "red";
+    c.fillText("Congrats! You found an easter egg!", 50, 50);
     player.draw()
     
     projectiles.forEach((projectile, index) => {
@@ -141,10 +144,18 @@ function animate(){
             const dist = Math.hypot(projectile.x - enemy.x, projectile.y - enemy.y)
             // when touch an enemy:
             if(dist - enemy.radius - projectile.radius < 1){
-                setTimeout(() => {
-                    enemies.splice(index, 1)
-                    projectiles.splice(projectileIndex, 1)
-                }, 0)
+                if(enemy.radius > 10){
+                    enemy.radius -= 10
+                    setTimeout(() => {
+                        enemies.splice(index, 1)
+                        projectiles.splice(projectileIndex, 1)
+                    }, 0)
+                }else{
+                    setTimeout(() => {
+                        enemies.splice(index, 1)
+                        projectiles.splice(projectileIndex, 1)
+                    }, 0)
+                }
             }
         });
     })
