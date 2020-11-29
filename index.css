@@ -34,6 +34,12 @@ div.word p{
 div.word input {
     width: 100%;
 }
+div.word input:focus {
+    border: 3px dashed darkred;
+    outline: 0;
+    border-radius: 3px;
+}
+
 
 div.mother {
     width: 100%;
@@ -118,6 +124,7 @@ footer button{
     top: -10px;
     width: 40%;
     background-color: #eaeaea;
+    font-weight: 900;
     border: none;
     border-radius: 12px;
     padding: 10px 20px;
